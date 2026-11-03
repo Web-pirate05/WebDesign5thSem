@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mehhfil | Find events and register in seconds</title>
+<meta name="description" content="Browse upcoming concerts, hackathons, expos and more. Pick an event and register in under a minute.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>document.documentElement.dataset.theme = localStorage.getItem("eventora.theme") || "light";</script>
+</head>
+<body data-page="home">
+<header class="nav" id="site-header"></header>
+<main>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <h1>Find something worth leaving the house for.</h1>
+        <p class="lead">Concerts, hackathons, expos, marathons. Search what is on, pick a date and get your ticket in under a minute.</p>
+        <form class="search" action="events.html" role="search">
+          <input name="q" placeholder="Search by event, venue or category" aria-label="Search events">
+          <button class="btn">Search</button>
+        </form>
+      </div>
+      <aside class="next" aria-label="Next event">
+        <p class="label">Next event starts in</p>
+        <div id="next-cd" class="cd"></div>
+        <h2 id="next-name"></h2>
+        <p id="next-meta"></p>
+        <a id="next-link" class="btn sun">Get a ticket</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="wrap">
+    <div class="head"><h2>Featured events</h2><a class="textlink" href="events.html">See all events</a></div>
+    <div class="grid" id="featured"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="head"><h2>Browse by category</h2></div>
+    <div class="cats" id="cats"></div>
+  </section>
+
+  <section class="wrap">
+    <div class="head"><h2>How it works</h2></div>
+    <ol class="steps">
+      <li><b>1</b><h3>Pick an event</h3><p>Search or filter by category to find what suits you.</p></li>
+      <li><b>2</b><h3>Register</h3><p>Fill in your name, email and phone. We check every field before you submit.</p></li>
+      <li><b>3</b><h3>Show up</h3><p>Your ticket is saved under My tickets, ready when you need it.</p></li>
+    </ol>
+  </section>
+</main>
+<footer id="site-footer"></footer>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
