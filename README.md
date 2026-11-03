@@ -1,10 +1,12 @@
-# Eventora: Responsive Event Management Website
+# Mehhfil: Responsive Event Management Website
+**Made by:** Iman Parui | Kalinga Institute of Industrial Technology | BTech CSE and 5th Semester
+**Task:** K Explore, Web Designing: Design and Develop a Responsive Event Management Website
 
-Eventora lets people discover upcoming events, read the details and register with a validated form.
+Mehhfil lets people discover upcoming events, read the details and register with a validated form.
 Built for the **K Explore – Web Designing** task with plain **HTML5, CSS3 and JavaScript** (no frameworks, no build step).
 
-**Live site:** https://YOUR-USERNAME.github.io/eventora/  
-**Repository:** https://github.com/YOUR-USERNAME/eventora
+**Live site:** https://mehhfil.vercel.app  
+**Repository:** https://github.com/Web-pirate05/WebDesign5thSem.git
 
 ![Home page](screenshots/home.png)
 
@@ -21,6 +23,31 @@ Built for the **K Explore – Web Designing** task with plain **HTML5, CSS3 and 
 | Confirmation | Success panel with a ticket ID after a valid submit |
 | Responsive | Mobile-first CSS Grid and Flexbox, tested at 360px, 768px and 1280px+ |
 | Bonus | Light/dark mode, countdown timers, animations, Local Storage registrations ("My tickets" with cancel) |
+
+## Technologies used
+- HTML5 (semantic structure, forms, `<dialog>`)
+- CSS3 (Grid, Flexbox, CSS variables, media queries, animations)
+- JavaScript (ES6+, DOM manipulation, form validation, Local Storage)
+- Git and GitHub for version control, GitHub Pages for deployment
+
+## Screenshots
+| Home | Events | Event details |
+|---|---|---|
+| ![Home](screenshots/home.png) | ![Registration](screenshots/registration.png) | ![Event](screenshots/event.png) | ![Details](screenshots/details.png) |
+
+| Mobile view | Dark mode |
+|---|---|
+| ![Mobile](screenshots/mobile.jpeg) | ![Dark](screenshots/dark.png) |
+
+## Notes on registration data
+Registrations are saved in the browser's Local Storage. They stay after a page refresh, but they are specific to one browser on one device and are not sent to a server. Clearing browser data removes them.
+
+## Challenges and what I learned
+- Building one reusable card and page-shell function so every page stays consistent
+- Writing form validation with clear, specific error messages
+- Making the layout work from 360px phones to wide desktop screens
+- Saving and reading data with Local Storage safely (handling empty or invalid data)
+- Deploying a static site and fixing issues that only appear on the live link
 
 ### Validation rules
 - **Name:** letters, spaces and `. ' -`, 3 to 50 characters
